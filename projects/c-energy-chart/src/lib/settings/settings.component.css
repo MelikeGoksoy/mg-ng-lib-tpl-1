@@ -1,0 +1,15 @@
+:host{
+    width: 100%;
+    height: auto;
+}
+mat-card-title{
+  border-bottom:1px solid gray;
+  padding-bottom:5px;
+  display:flex;
+  flex:1 0 0;
+}
+
+.card-row{
+    display: inline-table;
+    margin: 2% ;
+}

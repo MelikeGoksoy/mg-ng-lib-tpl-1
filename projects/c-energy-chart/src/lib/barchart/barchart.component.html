@@ -1,0 +1,56 @@
+<mat-card class="mat-elevation-z2">
+
+	<mat-card-header>
+		<mat-card-title>
+			Enerji Tüketim Grafiği
+		</mat-card-title>
+		<mat-card-subtitle>
+			02.04.2019 - 08.04.2019
+		</mat-card-subtitle>
+	</mat-card-header>
+
+	<mat-card-content  >
+
+		<div fxLayout fxLayout.xs="row wrap" fxLayoutAlign="flex-start" class="tarih">
+		
+				<mat-form-field>
+					<input matInput [matDatepicker]="picker1" placeholder="Başlangıç Tarihi Seçiniz">
+					<mat-datepicker-toggle  matSuffix [for]="picker1"></mat-datepicker-toggle>
+					<mat-datepicker #picker1></mat-datepicker>
+				</mat-form-field>
+			
+			
+				<mat-form-field >
+					<input matInput [matDatepicker]="picker2" placeholder="Bitiş Tarihi Seçiniz">
+					<mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+					<mat-datepicker #picker2></mat-datepicker>
+				</mat-form-field>
+			
+				<button  mat-raised-button style="background-color:#e2e2e2;color:#4682B4">Tamamla</button>
+		
+		</div>
+<div id="chart-parent">
+
+
+<ngx-charts-line-chart
+[results]="single"
+        (window:resize)="onResize($event)"  [view]="view"
+        [xAxis]=true
+        [yAxis]=true
+        [showGridLines]=true
+        [showXAxisLabel]=true
+        [showYAxisLabel]=true
+        [xAxisLabel]="'Tarih'"
+        [yAxisLabel]="'Kw'"
+        [roundDomains]=true
+        [legend]=true
+        [legendPosition]="'below'"
+        [legendTitle]="'Power Meter İsimleri'"
+        [animations]=true 
+>
+</ngx-charts-line-chart>
+
+</div>
+	</mat-card-content>
+
+</mat-card>

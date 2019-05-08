@@ -1,0 +1,32 @@
+  <mat-card-title>
+		Grafik Ayarları
+	</mat-card-title>
+	<mat-card-content>
+     <div>
+          <h3 class="card-row">Powermeter Seçiniz : </h3>
+          <select name="" id="">
+              <option  *ngFor="let s of settings.powermeters" >{{s}}</option>
+          </select>
+      </div>
+       <div>
+          <h3 class="card-row">Tüketim Biriminizi Seçiniz : </h3>
+          <select name="" id="">
+              <option  *ngFor="let s of settings.consumption" >{{s}}</option>
+          </select>
+      </div>
+       <div>
+          <h3 class="card-row">Para Biriminizi Seçiniz : </h3>
+          <select name="" id="">
+              <option  *ngFor="let s of settings.money" >{{s}}</option>
+          </select>
+      </div>
+       <div>
+          <h3 class="card-row">Grafik Çizim Periyodunu Seçiniz : </h3>
+          <select name="" id="">
+              <option  *ngFor="let s of settings.timeperiod" >{{s}}</option>
+          </select>
+      </div>
+      <div style="text-align:right;"> 
+        <button mat-stroked-button style="background-color:#fff">Kaydet</button>
+      </div>
+   </mat-card-content>

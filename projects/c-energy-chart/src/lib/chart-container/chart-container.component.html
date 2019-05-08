@@ -1,0 +1,15 @@
+<mat-card class="mat-elevation-z1 scene">
+	<mat-card-title>
+		<button mat-icon-button (click)="flipIt()">
+      <mat-icon>settings</mat-icon>
+    </button>
+  </mat-card-title>
+  <mat-card-content class="card" [class.voted]="flipped">
+      <mat-card class="card__face card__face--front">
+      <app-barchart></app-barchart>
+      </mat-card>
+      <mat-card  class="card__face card__face--back">
+          <app-settings></app-settings>
+      </mat-card>
+  </mat-card-content>
+</mat-card>

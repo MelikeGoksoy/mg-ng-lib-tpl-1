@@ -1,0 +1,23 @@
+{
+  "powermeters": [
+    "Nar Depo-1",
+    "Nar Depo-2",
+    "Nar Depo-3",
+    "Nar Depo-4",
+    "Nar Depo-5",
+    "Nar Depo-6"
+  ],
+  "consumption": [
+    "Kwh",
+    "Watt"
+  ],
+  "money": [
+    "TL",
+    "USD"
+  ],
+  "timeperiod": [
+    "Saatlik",
+    "Haftalık",
+    "Aylık"
+  ]
+}

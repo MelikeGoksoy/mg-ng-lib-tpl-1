@@ -1,0 +1,28 @@
+mat-card{
+   overflow: auto; 
+
+}
+mat-card-content div{
+  margin:5px;
+  flex:1
+}
+.tarih{
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+}
+.tarih >*{
+  flex:1 0 calc(33% - 5px);
+}
+
+.tarih >*:not(:last-child){
+  margin-right: 5px;
+  }
+
+#chart-parent{
+  margin-top: 5%;
+}
+:host{
+    width: 100%;
+    height: auto;
+}
