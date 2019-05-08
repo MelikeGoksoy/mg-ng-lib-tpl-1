@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "c-alarm": [
+        "dist/c-alarm"
+      ],
+      "c-alarm/*": [
+        "dist/c-alarm/*"
+      ]
+    }
   }
 }

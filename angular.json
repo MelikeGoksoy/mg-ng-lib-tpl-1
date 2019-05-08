@@ -13,7 +13,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-
             "outputPath": "dist/test-app",
             "index": "projects/apps/test-app/src/index.html",
             "main": "projects/apps/test-app/src/main.ts",
@@ -88,6 +87,41 @@
             "tsConfig": [
               "src/tsconfig.app.json",
               "src/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "c-alarm": {
+      "root": "projects/c-alarm",
+      "sourceRoot": "projects/c-alarm/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/c-alarm/tsconfig.lib.json",
+            "project": "projects/c-alarm/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/c-alarm/src/test.ts",
+            "tsConfig": "projects/c-alarm/tsconfig.spec.json",
+            "karmaConfig": "projects/c-alarm/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/c-alarm/tsconfig.lib.json",
+              "projects/c-alarm/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
