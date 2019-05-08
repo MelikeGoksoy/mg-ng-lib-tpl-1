@@ -24,6 +24,12 @@
       ],
       "c-alarm/*": [
         "dist/c-alarm/*"
+      ],
+      "c-energy-chart": [
+        "dist/c-energy-chart"
+      ],
+      "c-energy-chart/*": [
+        "dist/c-energy-chart/*"
       ]
     }
   }

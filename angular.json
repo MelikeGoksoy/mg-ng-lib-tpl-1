@@ -129,6 +129,41 @@
           }
         }
       }
+    },
+    "c-energy-chart": {
+      "root": "projects/c-energy-chart",
+      "sourceRoot": "projects/c-energy-chart/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/c-energy-chart/tsconfig.lib.json",
+            "project": "projects/c-energy-chart/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/c-energy-chart/src/test.ts",
+            "tsConfig": "projects/c-energy-chart/tsconfig.spec.json",
+            "karmaConfig": "projects/c-energy-chart/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/c-energy-chart/tsconfig.lib.json",
+              "projects/c-energy-chart/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "test-app"
