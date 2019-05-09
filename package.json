@@ -66,5 +66,12 @@
     "tslint": "~5.11.0",
     "typescript": "~3.1.1"
   },
+  "description": "angular ile library oluşturma",
+  "main": "index.js",
+  "keywords": [
+    "angular",
+    "library"
+  ],
+  "author": "Melike Goksoy",
   "license": "MIT"
 }
