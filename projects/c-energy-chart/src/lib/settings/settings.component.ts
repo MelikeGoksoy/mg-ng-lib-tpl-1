@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { SettingsService } from '../services/settings.service';
+import { SettingsService, Hede } from '../services/settings.service';
 @Component({
   selector: 'app-settings',
   templateUrl: './settings.component.html',
   styleUrls: ['./settings.component.css']
 })
 export class SettingsComponent implements OnInit {
-  settings = [];
+  settings :Hede;
   constructor(private _setService: SettingsService) { }
 
   ngOnInit() {
@@ -14,7 +14,7 @@ export class SettingsComponent implements OnInit {
   }
   fetchSettings() {
     this._setService.getSettings()
-      .subscribe(result => {
+      .subscribe((result:Hede) => {
         this.settings = result;
       });
     console.log("settings: " + this.settings);

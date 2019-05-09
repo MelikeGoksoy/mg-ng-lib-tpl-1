@@ -1,6 +1,6 @@
 {
-  "name": "c-energy-chart",
-  "version": "0.0.1",
+  "name": "@cantekfe/c-energy-chart",
+  "version": "0.0.3",
   "peerDependencies": {
     "@angular/common": "^7.0.0",
     "@angular/core": "^7.0.0"

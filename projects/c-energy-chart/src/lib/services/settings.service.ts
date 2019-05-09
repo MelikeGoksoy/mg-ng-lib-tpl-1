@@ -4,7 +4,14 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, of, from } from 'rxjs';
 import { find, first, filter, map, delay, concatMap } from 'rxjs/operators';
 
-const mockdata={
+export class Hede{
+  powermeters:any[]
+  consumption:any[]
+  money:any[]
+  timeperiod:any[]
+}
+
+const mockdata:Hede={
   "powermeters": [
     "Nar Depo-1",
     "Nar Depo-2",
